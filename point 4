@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int maxoftwo (int a,int b)
+{
+    if (a<b)
+        return b;
+    else if (a>b)
+        return a;
+    else if (a==b)
+        return a;
+}
+
+int main ()
+{
+    int x,y,res;
+    cout<<"enter the first number : ";
+    cin>>x;
+    cout<<"enter the second too : ";
+    cin>>y;
+    res = maxoftwo(x,y);
+    cout<<"the larger number is : "<<res;
+}
